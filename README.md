@@ -54,7 +54,7 @@ Below is a curated comparison of leading commercial retail merchandising and pla
 
 ## 💻 Open-Source GitHub Projects
 
-Below is a curated selection of open-source retail merchandising, demand forecasting, inventory management, and shelf auditing tools, sorted by **GitHub Stars_Count (descending)**.
+Below is a curated selection of open-source retail merchandising, demand forecasting, inventory management, and shelf auditing tools, sorted by **GitHub_Stars_Count (descending)**.
 
 | Project & Repo | Description & Key Features | GitHub_Stars | Tech Stack & License |
 | :--- | :--- | :--- | :--- |
