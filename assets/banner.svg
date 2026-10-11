@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Orbs Gradients -->
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Text Accent Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Base Background Layer -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Background Elements -->
+  <g id="background-glows">
+    <circle cx="200" cy="100" r="180" fill="url(#glowPurple)">
+      <animate attributeName="cx" values="200;250;200" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="100;140;100" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1000" cy="260" r="220" fill="url(#glowBlue)">
+      <animate attributeName="cx" values="1000;950;1000" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="260;220;260" dur="10s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Dynamic Background Graphs & Floating Cards -->
+  <g id="dynamic-background-elements" opacity="0.4">
+    <!-- Animated Chart Line -->
+    <path d="M 100 280 Q 250 200, 400 240 T 700 160 T 1000 210 T 1100 140" stroke="#38bdf8" stroke-width="3" fill="none" stroke-dasharray="6,6">
+      <animate attributeName="stroke-dashoffset" values="0;-24" dur="3s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Floating Metric Card 1 -->
+    <g transform="translate(80, 50)" filter="url(#shadow)">
+      <rect width="140" height="42" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5"/>
+      <text x="16" y="26" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">📈 Forecast +30%</text>
+      <animateTransform attributeName="transform" type="translate" values="80,50; 80,42; 80,50" dur="5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Floating Metric Card 2 -->
+    <g transform="translate(980, 60)" filter="url(#shadow)">
+      <rect width="140" height="42" rx="8" fill="url(#cardGrad)" stroke="#818cf8" stroke-opacity="0.4" stroke-width="1.5"/>
+      <text x="16" y="26" fill="#818cf8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">🎯 Stockout 0.2%</text>
+      <animateTransform attributeName="transform" type="translate" values="980,60; 980,68; 980,60" dur="6s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Floating Metric Card 3 -->
+    <g transform="translate(940, 240)" filter="url(#shadow)">
+      <rect width="160" height="42" rx="8" fill="url(#cardGrad)" stroke="#c084fc" stroke-opacity="0.4" stroke-width="1.5"/>
+      <text x="16" y="26" fill="#c084fc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">📸 Shelf Vision 98%</text>
+      <animateTransform attributeName="transform" type="translate" values="940,240; 940,232; 940,240" dur="7s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Main Foreground Header Text & Badges Layer -->
+  <g id="foreground" transform="translate(600, 0)" text-anchor="middle">
+    <!-- Main Title -->
+    <text x="0" y="125" fill="url(#textGrad)" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5" filter="url(#shadow)">
+      Awesome Retail Merchandising Cloud
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="172" fill="#cbd5e1" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" letter-spacing="0.2">
+      Curated Ecosystem of Enterprise SaaS Platforms, Open-Source Tools &amp; Retail AI Engines
+    </text>
+
+    <!-- Subtitle Line 2 -->
+    <text x="0" y="202" fill="#94a3b8" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400">
+      Assortment Planning • Demand Forecasting • Inventory Optimization • Planograms • Price Optimization
+    </text>
+
+    <!-- Foreground Feature Pills -->
+    <g transform="translate(0, 245)">
+      <!-- Pill 1 -->
+      <g transform="translate(-290, 0)">
+        <rect x="0" y="0" width="130" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+        <text x="65" y="22" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🛒 Assortment</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(-145, 0)">
+        <rect x="0" y="0" width="130" height="34" rx="17" fill="#1e293b" stroke="#818cf8" stroke-width="1.5" />
+        <text x="65" y="22" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">📈 Forecasting</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="135" height="34" rx="17" fill="#1e293b" stroke="#c084fc" stroke-width="1.5" />
+        <text x="67.5" y="22" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">📦 Inventory</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(150, 0)">
+        <rect x="0" y="0" width="135" height="34" rx="17" fill="#1e293b" stroke="#f472b6" stroke-width="1.5" />
+        <text x="67.5" y="22" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">📸 Planogram AI</text>
+      </g>
+    </g>
+  </g>
+</svg>
