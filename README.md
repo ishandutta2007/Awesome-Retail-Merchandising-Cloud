@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Retail-Merchandising-Cloud?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Retail-Merchandising-Cloud?style=flat-square&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Retail-Merchandising-Cloud?style=flat-square&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
@@ -54,9 +54,9 @@ Below is a curated comparison of leading commercial retail merchandising and pla
 
 ## 💻 Open-Source GitHub Projects
 
-Below is a curated selection of open-source retail merchandising, demand forecasting, inventory management, and shelf auditing tools, sorted by **GitHub Star Count (descending)**.
+Below is a curated selection of open-source retail merchandising, demand forecasting, inventory management, and shelf auditing tools, sorted by **GitHub Stars_Count (descending)**.
 
-| Project & Repo | Description & Key Features | Stars | Tech Stack & License |
+| Project & Repo | Description & Key Features | GitHub_Stars | Tech Stack & License |
 | :--- | :--- | :--- | :--- |
 | 📦 **[InvenTree](https://github.com/inventree/InvenTree)** | **Open-source Inventory Management System** — REST API, Django backend, multi-location stock tracking, part management, and plugin ecosystem. | [![Stars](https://img.shields.io/github/stars/inventree/InvenTree?style=social&color=white)](https://github.com/inventree/InvenTree/stargazers) | Python, Django • GPL-3.0 |
 | 🏭 **[GreaterWMS](https://github.com/GreaterWMS/GreaterWMS)** | **Open-source Warehouse Management System** — logistics, stock control, order processing, and retail inventory management. | [![Stars](https://img.shields.io/github/stars/GreaterWMS/GreaterWMS?style=social&color=white)](https://github.com/GreaterWMS/GreaterWMS/stargazers) | Python, Vue.js • Apache-2.0 |
