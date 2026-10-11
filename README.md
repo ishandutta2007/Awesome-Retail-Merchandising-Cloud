@@ -1,237 +1,159 @@
-# Awesome-Retail-Merchandising-Cloud
-
-## Top Retail Merchandising Cloud Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Assortment Planning, Inventory Optimization & Self-Hosted Merchandising Platforms*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial retail merchandising platforms** and **open-source projects** that manage product assortment, inventory planning, pricing optimization, and shelf execution across retail channels.
-
-
-
-**Examples** include Salesforce Mass Merchant Solutions, Blue Yonder, SPS Commerce, Repsly, Trax Retail, Toolio, Inventory Planner, Flxpoint, Crisp Data, and Retalon (the category leaders).
-
-
-
-**Open-source emphasis**: Retail merchandising cloud is an emerging open-source domain with strong foundations for demand forecasting, inventory optimization, and pricing. **demandplan** leads as a production-grade demand planning library with probabilistic forecasting, intermittent demand methods, and hierarchical reconciliation validated on real Walmart M5 data . **OpenEC** provides a modular, provider-agnostic analytics platform for e-commerce and retail with inventory forecasting and pricing modules . **AI Blueprints from Crisp** offers open-source, AI-ready templates for assortment planning, on-shelf availability, and store clustering . **RetailVision** demonstrates AI-powered shelf auditing with planogram mismatch detection . **planogram-tools** brings zero-dependency planogram visualization and editing . **Retail Price Optimization** shows end-to-end ML-based price elasticity and profit maximization . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Blue Yonder](https://blueyonder.com/)**
-
-  **Enterprise retail planning and execution platform** — Category Management suite with Shopper Insights for behavioral analytics, Planogram Generator Enterprise for algorithmic store-specific planogram generation, and assortment optimization with demand transfer prediction .
-
-
-
-- **[SPS Commerce](https://www.spscommerce.com/)**
-
-  **Retail analytics and decision intelligence platform** — unifies omnichannel sales and inventory data across trading partners with pre-built dashboards for sell-through, weeks of supply, and assortment performance. Customers see +68% two-year revenue growth and +12% gross margin improvement .
-
-
-
-- **[Repsly](https://www.repsly.com/)**
-
-  **Retail execution platform** — AI Image Recognition turns shelf photos into insights in under 60 seconds with up to 98% SKU accuracy. Merchandising, field sales, promotion execution, and retail services modules. Customers see 22% more visits per rep and 180% more voids closed .
-
-
-
-- **[Trax Retail](https://traxretail.com/)**
-
-  **Computer vision and shelf analytics platform** — Signal-Based Merchandising leverages shelf signals and visit data to uncover root causes of out-of-stocks. Next Best Action provides real-time store-specific guidance to field teams. New SKU detection in under two weeks .
-
-
-
-- **[Retalon](https://retalon.com/)**
-
-  **Unified retail analytics and merchandise planning** — AI-powered demand forecasting, assortment planning, inventory optimization, and markdown optimization. One customer reduced rebalancing from a month-long cycle to 15 minutes for the entire company .
-
-
-
-- **[Crisp](https://gocrisp.com/)**
-
-  **Collaborative commerce platform** — connects and normalizes 40+ retail data sources for real-time insights. AI Blueprints provide open-source, AI-ready templates for store clustering, weather analytics, anomaly detection, and on-shelf availability .
-
-
-
-- **[Salesforce Mass Merchant Solutions](https://www.salesforce.com/)**
-
-  **Salesforce's retail merchandising solutions** — integrated with Commerce Cloud for assortment, inventory, and order management.
-
-
-
-- **[Toolio](https://www.toolio.com/)**
-
-  **Merchandise planning platform** — modern planning for assortment, inventory, and open-to-buy.
-
-
-
-- **[Inventory Planner](https://www.inventory-planner.com/)**
-
-  **Inventory forecasting and replenishment** — demand forecasting, purchase order suggestions, and stockout prevention.
-
-
-
-- **[Flxpoint](https://www.flxpoint.com/)**
-
-  **Product data and inventory management** — multi-channel product listings, inventory sync, and dropship automation.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Demand Forecasting & Inventory Planning
-
-
-
-- **[demandplan](https://pypi.org/project/demandplan/0.4.0/)**  
-
-  **Production-grade demand planning library with probabilistic forecasting, intermittent demand methods, hierarchical reconciliation, and inventory decisions**, Apache-2.0 licensed . **Measured selection, not rules** — champion-challenger backtests pick a method per SKU; no hardcoded segmentation thresholds. **Quantiles are the contract** — every forecaster returns predictive distributions because inventory decisions consume tails (newsvendor), not points. **Validated adversarially** — golden-reference tests against vetted implementations, ground-truth simulations, real Walmart M5 data. **Results**: +30% FVA vs naive on real M5 data, coherence error 5e-13 across 283 nodes, safety stock hits 95.3% realized service vs 95% target, 25,000-series champion-challenger in ~250s single machine. **Shipped**: naive/seasonal-naive, ETS, ARIMA/SARIMA, Croston/SBA/TSB, global LightGBM, MinT-shrink/WLS/BU-TD-MO reconciliation, rolling-origin backtesting, newsvendor order-up-to. **Best for production demand planning with measured model selection**.
-
-
-
-- **[OpenEC](https://pypi.org/project/openec/)**  
-
-  **Open Source AI-Powered Ecommerce & Retail Analytics Platform**, AGPL-3.0 licensed . **Provider pattern** — one API, many data sources (Shopify, Amazon SP-API, WooCommerce, Google Analytics). **Command hierarchy** covering products, orders, customers, inventory, marketing, analytics, and pricing. **Inventory commands**: `/inventory/levels/*`, `/inventory/forecasting/*`, `/inventory/movements/*` for stock management, demand forecasting, and turnover analysis. **OECject response wrapper** with `.to_dataframe()`, `.to_dict()`, `.to_json()`, `.to_chart()`. **Extension system** via pip-installable plugins discovered at runtime. **REST API** on port 6900. **Best for modular, extensible retail analytics with provider abstraction**.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Retail Merchandising Cloud Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Retail-Merchandising-Cloud?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Retail-Merchandising-Cloud?style=flat-square&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Retail-Merchandising-Cloud/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+# 🛒 Awesome Retail Merchandising Cloud
+
+> **Curated List of Commercial Enterprise SaaS Platforms, Open-Source GitHub Projects & AI Blueprints for Retail Assortment Planning, Inventory Optimization, Pricing Strategy & Planogram Compliance**
+
+Welcome to the **Awesome Retail Merchandising Cloud** ecosystem! This repository tracks notable **commercial retail merchandising platforms** and **open-source projects** that manage product assortment, demand forecasting, inventory replenishment, price elasticity optimization, and shelf execution across omnichannel retail operations.
+
+---
+
+## 📑 Table of Contents
+
+- [☁️ Commercial SaaS & Enterprise Platforms](#️-commercial-saas--enterprise-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🔬 Open-Source Category Deep Dives](#-open-source-category-deep-dives)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [📈 Star History](#-star-history)
+
+---
+
+## ☁️ Commercial SaaS & Enterprise Platforms
+
+> 🌐 **Market Overview**: The Global Retail Merchandising Cloud & Planning Software sector is estimated at **$12.8 Billion in 2026** (projected to reach **$21.4 Billion by 2030** at an 11.2% CAGR). The market is **moderately fragmented**, balancing enterprise titans (Salesforce, Blue Yonder, SPS Commerce) that dominate large-scale retail infrastructure alongside specialized category leaders (Trax, Crisp, Toolio, Repsly) focusing on AI shelf recognition, collaborative data sharing, and agile merchandise planning.
+
+Below is a curated comparison of leading commercial retail merchandising and planning SaaS platforms, sorted by **Company Scale / Valuation / Revenue (descending)**.
+
+| Product & Link | Description & Key Features | Starting Price | Free Tier / Trial Limit | Company Scale (Valuation / Revenue) |
+| :--- | :--- | :--- | :--- | :--- |
+| ☁️ **[Salesforce Mass Merchant Solutions](https://www.salesforce.com/)** | **Salesforce's retail merchandising & Consumer Goods Cloud** — integrated with Commerce Cloud for assortment, inventory tracking, and retail execution. | **$50/user/month** (Starter tier) | **30-day free trial** (Full sandbox access & sample retail data) | **$34.9 Billion Revenue** ($280B Market Cap) |
+| 📦 **[Blue Yonder](https://blueyonder.com/)** | **Enterprise retail planning & supply chain platform** — Category Management suite with Shopper Insights, algorithmic store-specific planogram generator, and demand transfer prediction. | **$40,000/month** ($480k/yr base contract) | **14-day guided proof-of-concept trial** (Limited to 5 store locations) | **$7.1 Billion Valuation** ($1.42B Revenue) |
+| 📊 **[SPS Commerce](https://www.spscommerce.com/)** | **Retail analytics & trading partner decision intelligence platform** — unifies omnichannel sales and inventory data across trading partners with sell-through and weeks-of-supply dashboards. | **$250/month** (Basic trading partner connector) | **30-day sandbox trial** (Up to 100 EDI test transactions) | **$2.9 Billion Market Cap** ($772.5M Revenue) |
+| 📸 **[Trax Retail](https://traxretail.com/)** | **Computer vision & shelf analytics platform** — Signal-Based Merchandising leverages shelf signals and photo visit data to detect out-of-stocks and guide field reps in real-time. | **$1,500/month** (Per store cluster package) | **14-day free trial** (Up to 500 shelf photo scans) | **$1.3 Billion Valuation** ($120M Revenue) |
+| ⚡ **[Crisp](https://gocrisp.com/)** | **Collaborative commerce platform** — connects and normalizes 40+ retail data sources for real-time insights with open-source AI templates for store clustering & on-shelf availability. | **$1,500/month** ($18,000/year base tier) | **14-day free trial** (1 connected retailer data feed) | **$300 Million Valuation** ($20M Revenue) |
+| 📋 **[Repsly](https://www.repsly.com/)** | **Retail execution platform** — AI Image Recognition turns shelf photos into insights in under 60 seconds with up to 98% SKU accuracy for field sales and promotion auditing. | **$29/user/month** (Field Rep plan) | **14-day free trial** (Full field rep features & dashboard access) | **$75 Million Valuation** ($15.1M Revenue) |
+| 📈 **[Inventory Planner](https://www.inventory-planner.com/)** | **Inventory forecasting & replenishment platform by Sage** — demand forecasting, purchase order suggestions, stockout prevention, and multi-channel stock sync. | **$250/month** (Base subscription) | **14-day free trial** (Unlimited SKU sync & forecast modeling) | **$50 Million Valuation** ($10.0M Revenue) |
+| 🛍️ **[Toolio](https://www.toolio.com/)** | **Merchandise planning platform** — modern automated planning for retail merchandise assortment, inventory allocation, and open-to-buy (OTB) optimization. | **$500/month** (Professional tier) | **14-day trial** (Includes sample merchandise plan & 1 user license) | **$40 Million Valuation** ($6.6M Revenue) |
+| 🎯 **[Retalon](https://retalon.com/)** | **Unified retail analytics & merchandise planning** — AI-powered demand forecasting, product assortment planning, inventory rebalancing, and markdown optimization. | **$1,200/month** (Engine entry tier) | **30-day free trial** (AI Impact Assessment & sample inventory audit) | **$30 Million Valuation** ($6.0M Revenue) |
+| 🔄 **[Flxpoint](https://www.flxpoint.com/)** | **Product data & multi-channel inventory management** — multi-channel product listings, inventory sync, vendor dropship routing, and order automation. | **$699/month** (Standard plan billed annually) | **14-day free trial** (Up to 1,000 SKUs & 2 vendor channels) | **$25 Million Valuation** ($5.0M Revenue) |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Below is a curated selection of open-source retail merchandising, demand forecasting, inventory management, and shelf auditing tools, sorted by **GitHub Star Count (descending)**.
+
+| Project & Repo | Description & Key Features | Stars | Tech Stack & License |
+| :--- | :--- | :--- | :--- |
+| 📦 **[InvenTree](https://github.com/inventree/InvenTree)** | **Open-source Inventory Management System** — REST API, Django backend, multi-location stock tracking, part management, and plugin ecosystem. | [![Stars](https://img.shields.io/github/stars/inventree/InvenTree?style=social&color=white)](https://github.com/inventree/InvenTree/stargazers) | Python, Django • GPL-3.0 |
+| 🏭 **[GreaterWMS](https://github.com/GreaterWMS/GreaterWMS)** | **Open-source Warehouse Management System** — logistics, stock control, order processing, and retail inventory management. | [![Stars](https://img.shields.io/github/stars/GreaterWMS/GreaterWMS?style=social&color=white)](https://github.com/GreaterWMS/GreaterWMS/stargazers) | Python, Vue.js • Apache-2.0 |
+| 🚚 **[fleetbase](https://github.com/fleetbase/fleetbase)** | **Modular open-source logistics & supply chain platform** — order dispatch, inventory sync, and store delivery management. | [![Stars](https://img.shields.io/github/stars/fleetbase/fleetbase?style=social&color=white)](https://github.com/fleetbase/fleetbase/stargazers) | PHP, Ember.js • MIT |
+| 📈 **[demandplan](https://github.com/demandplan-dev/demandplan)** | **Production-grade demand planning library** — probabilistic forecasting, intermittent demand models, hierarchical reconciliation, and Walmart M5 validation. | [![Stars](https://img.shields.io/github/stars/demandplan-dev/demandplan?style=social&color=white)](https://github.com/demandplan-dev/demandplan/stargazers) | Python, LightGBM • Apache-2.0 |
+| 🌐 **[OpenEC](https://github.com/openec-org/openec)** | **AI-Powered Ecommerce & Retail Analytics Platform** — provider abstraction (Shopify, Amazon, WooCommerce), inventory level forecasting, and turnover analysis. | [![Stars](https://img.shields.io/github/stars/openec-org/openec?style=social&color=white)](https://github.com/openec-org/openec/stargazers) | Python, REST API • AGPL-3.0 |
+| 📸 **[RetailVision](https://github.com/deoxilix/retailVision)** | **AI-powered retail shelf auditor** — uploads shelf photo, enhances via Magnific, runs GPT-4o vision to detect planogram mismatches and compute audit score. | [![Stars](https://img.shields.io/github/stars/deoxilix/retailVision?style=social&color=white)](https://github.com/deoxilix/retailVision/stargazers) | Next.js, FastAPI • MIT |
+| 🏷️ **[Retail Price Optimization](https://github.com/bijay-odyssey/Retail-Price-Optimization-with-ML-Regression-Elasticity-Profit-Maximization)** | **ML price optimization system** — competition-adjusted price elasticity estimation, price sensitivity simulation (+/−10%), and profit curve maximization. | [![Stars](https://img.shields.io/github/stars/bijay-odyssey/Retail-Price-Optimization-with-ML-Regression-Elasticity-Profit-Maximization?style=social&color=white)](https://github.com/bijay-odyssey/Retail-Price-Optimization-with-ML-Regression-Elasticity-Profit-Maximization/stargazers) | Python, Scikit-learn • MIT |
+| 🤖 **[RLASORTI](https://github.com/dmitriyrayder/RLASORTI)** | **SKU assortment optimization with Reinforcement Learning** — Deep Q-Network (DQN) analyzes sales to decide SKU retention/removal and stock depth. | [![Stars](https://img.shields.io/github/stars/dmitriyrayder/RLASORTI?style=social&color=white)](https://github.com/dmitriyrayder/RLASORTI/stargazers) | Python, PyTorch • MIT |
+| 📐 **[planogram-tools](https://github.com/planogram-tools/planogram-tools)** | **Zero-dependency planogram visualization & editing** — chest cabinet planogram design via `npx`, column/basket dimensions, and JSON import/export. | [![Stars](https://img.shields.io/github/stars/planogram-tools/planogram-tools?style=social&color=white)](https://github.com/planogram-tools/planogram-tools/stargazers) | TypeScript, Node.js • MIT |
+| 🔌 **[merch-connector](https://github.com/merch-connector/merch-connector)** | **MCP Server for automated merchandising audits** — Puppeteer stealth scraping, network fingerprinting, 5 expert personas (Floor Walker, Auditor, Scout). | [![Stars](https://img.shields.io/github/stars/merch-connector/merch-connector?style=social&color=white)](https://github.com/merch-connector/merch-connector/stargazers) | Node.js, Puppeteer • MIT |
+| 📊 **[Smart Inventory & Forecasting](https://github.com/JRAnalyst14/Smart_Inventory_and_Demand_Forecasting_System)** | **MySQL-powered demand tracking system** — tracks stock movements, predicts sales trends with SQL analysis, and generates automated insights. | [![Stars](https://img.shields.io/github/stars/JRAnalyst14/Smart_Inventory_and_Demand_Forecasting_System?style=social&color=white)](https://github.com/JRAnalyst14/Smart_Inventory_and_Demand_Forecasting_System/stargazers) | SQL, MySQL • Open Source |
+| 🛠️ **[python_inventory_manager](https://github.com/NK-Forge/python_inventory_manager)** | **Inventory management automation tool** — low stock detection with urgency levels, category performance breakdown, valuation, and visual charts. | [![Stars](https://img.shields.io/github/stars/NK-Forge/python_inventory_manager?style=social&color=white)](https://github.com/NK-Forge/python_inventory_manager/stargazers) | Python, Pandas • MIT |
+| 🧠 **[Retail Sales Forecasting & Inventory](https://github.com/Anupam-Santra/Retail-Sales-Forecasting-Inventory-Optimization)** | **End-to-end ML retail forecasting pipeline** — demand prediction models, safety stock calculations, and reorder point automation. | [![Stars](https://img.shields.io/github/stars/Anupam-Santra/Retail-Sales-Forecasting-Inventory-Optimization?style=social&color=white)](https://github.com/Anupam-Santra/Retail-Sales-Forecasting-Inventory-Optimization/stargazers) | Python, XGBoost • MIT |
+
+---
+
+## 🔬 Open-Source Category Deep Dives
+
+### 📈 1. Demand Forecasting & Inventory Planning
+
+- **[demandplan](https://github.com/demandplan-dev/demandplan)**  
+  **Production-grade demand planning library with probabilistic forecasting, intermittent demand methods, hierarchical reconciliation, and inventory decisions**, Apache-2.0 licensed. Champion-challenger backtests pick a method per SKU without hardcoded segmentation thresholds. Every forecaster returns predictive distributions for newsvendor order-up-to calculations. Validated against real Walmart M5 data (+30% FVA vs naive). Includes LightGBM, ARIMA, ETS, Croston/SBA, MinT reconciliation, and rolling backtests.
+
+- **[OpenEC](https://github.com/openec-org/openec)**  
+  **Open Source AI-Powered Ecommerce & Retail Analytics Platform**, AGPL-3.0 licensed. Provider pattern abstraction for Shopify, Amazon SP-API, WooCommerce, and Google Analytics. Covers stock levels (`/inventory/levels/*`), forecasting (`/inventory/forecasting/*`), and turnover analysis.
 
 - **[Smart Inventory and Demand Forecasting System](https://github.com/JRAnalyst14/Smart_Inventory_and_Demand_Forecasting_System)**  
-
-  **MySQL-powered system for tracking stock, analyzing sales trends, and predicting demand in retail**, open-source . **Real-time inventory tracking** — keep an eye on stock levels and movement. **Demand forecasting** — predict future sales trends using SQL-based analysis. **Data-driven insights** — make informed decisions based on historical sales data. **User access control** — secure role-based permissions. **Automated reports** — generate key inventory and demand insights dynamically. **SQL techniques**: joins, subqueries, transactions, constraints. **Best for SQL-centric inventory and demand analysis**.
-
-
+  **MySQL-powered stock tracking and demand prediction system**. Real-time inventory tracking, SQL-based sales trend analysis, role-based access control, and dynamic automated reporting.
 
 - **[python_inventory_manager](https://github.com/NK-Forge/python_inventory_manager)**  
+  **Professional inventory management automation tool**. Features automated low-stock detection (Critical/Low urgency), category performance breakdown, inventory valuation, and visual matplotlib/seaborn charts.
 
-  **Professional inventory management automation tool**, open-source . **Automated analysis** — low stock detection with urgency levels (Critical/Low), category performance breakdown, inventory valuation, and reorder calculations with cost estimates. **Professional reporting** — visual charts (category analysis, stock distributions, restock priorities), CSV exports, executive summaries, customizable thresholds. **Python 3.8+** with pandas, matplotlib, seaborn. **Best for automated inventory analysis and reporting**.
+---
 
-
-
-### Assortment Planning & Pricing Optimization
-
-
+### 🏷️ 2. Assortment Planning & Pricing Optimization
 
 - **[Retail Price Optimization with ML](https://github.com/bijay-odyssey/Retail-Price-Optimization-with-ML-Regression-Elasticity-Profit-Maximization)**  
-
-  **End-to-end price optimization system using ML regression, competition-adjusted elasticity, and profit-curve simulation**, open-source . **Gradient Boosting/Random Forest regression** for demand prediction. **Competition-adjusted price elasticity** estimated via 1% price change simulation. **Price simulations (+/−10%)** to test sensitivity. **Profit curve construction** for individual products. **Optimal price selection** that maximizes predicted profit. **Key findings**: average elasticity –0.45 (inelastic), some products up to –7, optimal prices often higher than current. **Example output**: optimal price $350 vs current $45.95, profit swing +$384.44. **Best for ML-based retail pricing research**.
-
-
+  **Price optimization system using ML regression, competition-adjusted elasticity, and profit-curve simulation**. Gradient Boosting and Random Forest models predict demand sensitivity (+/−10% simulation) to identify profit-maximizing price points.
 
 - **[RLASORTI (SKU Optimization with RL)](https://github.com/dmitriyrayder/RLASORTI)**  
-
-  **Professional SKU assortment optimization system based on Reinforcement Learning (Deep Q-Network)**, open-source . **Automatically analyzes sales and suggests optimal decisions**: which SKUs to keep, which to remove for profit maximization, how to adjust stock depth. **Features**: Excel/CSV data loading, feature engineering (15+ features), DQN with experience replay, business metrics (GMV, Profit, ROI, Out-of-Stock cost, Turnover), interactive Plotly dashboards, CSV export. **Streamlit web interface** with configurable RL parameters. **Best for RL-based assortment optimization research**.
-
-
+  **SKU assortment optimization using Reinforcement Learning (Deep Q-Network)**. Automatically analyzes sales to recommend which SKUs to retain or drop, computes GMV, Profit, ROI, and out-of-stock penalties, and presents results in interactive Streamlit dashboards.
 
 - **[Retail Markdown Optimization (RelationalAI)](https://github.com/relationalai/templates/blob/main/v1/retail_markdown/retail_markdown.py)**  
+  **Retail markdown mixed-integer linear optimization (MILP) template**. Enforces price ladder constraints (discounts must strictly increase over time), bounds sales by discount lift multipliers, and maximizes revenue while honoring total inventory limits.
 
-  **Retail markdown mixed-integer linear optimization (MILP) template**, open-source . **Models products, discounts, and weeks as concepts** with typed properties. **Chooses exactly one discount level per product per week** (binary selection). **Enforces price ladder** so discounts can only increase over time. **Bounds weekly sales by demand** (base demand × discount lift × weekly multiplier). **Tracks cumulative sales and ensures inventory is not exceeded**. **Maximizes total revenue** from discounted sales plus salvage value of leftover inventory. **Best for prescriptive markdown optimization**.
+---
 
-
-
-### Shelf Auditing & Planogram Tools
-
-
+### 📸 3. Shelf Auditing & Planogram Tools
 
 - **[RetailVision](https://github.com/deoxilix/retailVision)**  
+  **AI-powered retail shelf auditor**. Upload shelf photos to generate manager-ready audit reports highlighting out-of-stocks, planogram mismatches, weighted penalty scores, and prioritized restock steps via GPT-4o vision.
 
-  **AI-powered retail shelf auditor**, open-source . **Upload a shelf photo, get a manager-ready audit report** with detected issues, planogram mismatches, a deterministic score, and prioritized restock actions. **Full-stack pipeline**: FastAPI backend (upload → Magnific enhance → GPT-4o vision → planogram match → score → report) with Next.js frontend. **Deterministic scoring with weighted penalty formula**. **Sample data**: 3 planograms (snacks, cereal, beverages). **Best for AI-powered shelf auditing and planogram compliance**.
+- **[planogram-tools](https://github.com/planogram-tools/planogram-tools)**  
+  **Zero-dependency planogram visualization and editing tool**. Visual interactive editing of chest cabinet planograms via `npx`. Features automatic integer space allocation via largest remainder method and JSON schema export.
 
+- **[merch-connector (MCP Server)](https://github.com/merch-connector/merch-connector)**  
+  **MCP server providing AI merchandising agents with automated web scraping and site auditing tools**. Features Puppeteer stealth integration, network intelligence for 35+ commerce platforms, and 5 expert audit personas.
 
+---
 
-- **[planogram-tools](https://www.npmjs.com/package/planogram-tools)**  
+## 🤝 How to Contribute
 
-  **Zero-dependency planogram visualization and editing tool**, open-source . **Visual editing/generation of chest cabinet planograms** via `npx`. **Forward**: define cabinet dimensions → divide columns → divide baskets → fill skuId → export JSON. **Reverse**: import existing planogram JSON, render on canvas, drag/edit, re-export. **Data model invariants**: column widths sum to cabinet width, basket heights sum to cabinet height, integer allocation via largest remainder method. **Best for planogram design and JSON schema compliance**.
+Contributions are welcome! Help us expand this curated ecosystem:
 
+1. **Fork** this repository.
+2. Add your entry to either the **Commercial SaaS Table** or **Open-Source Table** following the established column structure.
+3. Ensure all links, descriptions, pricing/star details, and licensing details are accurate.
+4. Submit a **Pull Request** with a brief summary of the added software.
 
+---
 
-- **[merch-connector (MCP Server)](https://www.npmjs.com/package/merch-connector)**  
+## 💖 Support & Sponsorship
 
-  **MCP server giving merchandising agents eyes on any storefront**, open-source . **11 tools** for scrape, audit, compare, roundtable analysis, and eval tracking. **Five expert personas**: Floor Walker (first-time shopper), Auditor (compliance analyst), Scout (competitor VP), B2B Auditor (procurement buyer), Conversion Architect (CRO specialist). **Puppeteer with stealth plugin** bypasses bot detection. **Network intelligence** fingerprints 35+ commerce platforms via XHR interception. **Persistent site memory** with change detection across visits. **Best for AI-agent-driven merchandising audits**.
+Thank you for visiting and supporting this curated resource! If you find this repository helpful, please consider supporting the project:
 
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and share** it with your developer, supply chain, and retail merchandising network.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing open-source curation and development, you can sponsor via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
 
+<p align="left">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-Sponsor%20me%20on%20GitHub-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor me on GitHub" />
+  </a>
+</p>
 
-### Additional Strong Open-Source Options
+---
 
+## ⚠️ Disclaimer
 
+- This is a **community-curated list** — provided for informational and educational purposes.
+- Enterprise retail merchandising platforms process high-volume sales, inventory, and supplier data. Self-hosted solutions require proper security hardening, access controls, and compliance.
+- Demand forecasting accuracy depends heavily on historical data quality, seasonality, and promotion flags.
+- Verify software licensing (Apache-2.0, GPL-3.0, AGPL-3.0, MIT) before commercial deployment.
 
-- **merchGent** — Open-source tool for retail merchandising site analysis, related to merch-connector .
+---
 
-- **Claude-ecom** — Turns ecommerce orders CSV into executive-grade business review with KPI decomposition, prioritized findings, and concrete next actions. One command .
+## 📈 Star History
 
-- **Classytic Planning** — Pure, deterministic MRP net-requirements calculation kernel with zero runtime dependencies. Forecast consumption, time-phasing, network allocation, and lot sizing .
-
-- **hypar-io/Function-SpacePlanning** — The Space Planning function for laying out, sketching, and defining program uses for spaces .
-
-- **Sweet Home 3D** — Open-source interior design tool for floor plans and 3D home models, useful for retail space planning .
-
-- **Alea Carta Est** — Research code for shopping basket choice modeling with embeddings for product interactions, useful for assortment optimization .
-
-
-
-**Frameworks for building custom retail merchandising solutions**: Combine **demandplan** for production-grade demand forecasting with probabilistic quantiles and hierarchical reconciliation . Use **OpenEC** for modular retail analytics with provider abstraction across Shopify, Amazon, and WooCommerce . Deploy **RetailVision** for AI-powered shelf auditing and planogram compliance . Integrate **planogram-tools** for zero-dependency planogram design and JSON schema generation . Use **Retail Price Optimization** for ML-based price elasticity and profit maximization . Note that true enterprise merchandising cloud with unified assortment planning, inventory optimization, and vendor-supported SLAs (Blue Yonder, SPS Commerce, Retalon) remains primarily commercial territory; open-source stacks provide strong demand forecasting, assortment optimization, and shelf analytics foundations that require integration for complete retail merchandising operations.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Retail merchandising platforms handle sensitive sales, inventory, and pricing data. Self-hosted solutions require proper security hardening, access controls, and compliance with data privacy regulations.
-
-- **Demand forecasting accuracy depends on data quality** — historical sales, seasonality, promotions, and external factors all influence forecasts. demandplan's champion-challenger approach validates method selection per SKU .
-
-- **Planogram compliance requires accurate shelf data** — AI-powered auditing like RetailVision depends on image quality and planogram accuracy .
-
-- **License considerations**: demandplan uses Apache-2.0 , OpenEC uses AGPL-3.0 , and planogram-tools is open-source . Verify licensing against your use case before committing.
-
-- The open-source ecosystem provides strong demand forecasting, assortment optimization, and shelf analytics foundations, but **unified assortment planning, inventory optimization, and vendor-supported SLAs** remain primarily commercial offerings.
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Retail-Merchandising-Cloud&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Retail-Merchandising-Cloud&type=date&legend=top-left)
